@@ -1,0 +1,23 @@
+
+<?php $__env->startSection('content'); ?>
+ 
+ 
+<div class="card">
+  <div class="card-header">Enrollments Page</div>
+  <div class="card-body">
+   
+ 
+        <div class="card-body">
+        <h5 class="card-title">Enroll No : <?php echo e($enrollments->enroll_no); ?></h5>
+        <p class="card-text">Batch : <?php echo e($enrollments->batch_id); ?></p>
+        <p class="card-text">Student  : <?php echo e($enrollments->student_id); ?></p>
+        <p class="card-text">Join Date : <?php echo e($enrollments->join_date); ?></p>
+        <p class="card-text">Fee : <?php echo e($enrollments->fee); ?></p>
+  </div>
+       
+    </hr>
+  
+  </div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Web-Development\08.LARAVEL\12.PROJECTS\studentmanagement-app\resources\views/enrollments/show.blade.php ENDPATH**/ ?>
